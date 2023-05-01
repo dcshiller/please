@@ -27,11 +27,8 @@ if __name__ == "__main__":
         cprint("Please provide a prompt as a command line argument.", 'red')
         sys.exit(1)
     prompt = " ".join(sys.argv[1:])
+    prompt = f"""The following is a line of bash code that will {prompt}."""
     print(colored(prompt, 'cyan'))
-    prompt = f"""
-
-The following is a line of bash code that will {prompt}.
-    """
     command = generate_response(prompt)
     print(colored("--> ", 'cyan') + colored(command, 'magenta'))
     query = colored("Should I run this? (y/n): ", 'cyan')
