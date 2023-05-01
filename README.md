@@ -1,4 +1,7 @@
-Plain English bash via OpenAI's API
+### Plain English bash commands via OpenAI's API.
+
+
+##### Setup
 
 Note, you need an API key for OpenAI's GPT3 to use this.
 
@@ -8,7 +11,7 @@ export OPENAI_API_KEY=your-key-here
 alias please="python3 ~/path/to/please"
 ```
 
-Usage:
+#### Usage
 
 ```
 please list all my files by file size
