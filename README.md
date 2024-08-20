@@ -1,13 +1,13 @@
-### Plain English bash commands via OpenAI's API.
+### Plain English bash commands via OpenRouter's API.
 
 
 ##### Setup
 
-Note, you need an API key for OpenAI's GPT3 to use this.
+Note, you need an API key for [OpenRouter](https://openrouter.ai/) to use this.
 
 Add the following to your bash profile:
 ```
-export OPENAI_API_KEY=your-key-here
+export OPENROUTER_API_KEY=your-key-here
 alias please="python3 ~/path/to/please.py"
 ```
 
