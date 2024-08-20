@@ -1,4 +1,3 @@
-#  import openai
 import sys
 import os
 import json
@@ -7,13 +6,6 @@ from termcolor import colored, cprint
 import requests
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_KEY")
-#  Make sure you have the OpenAI API key set as an environment variable
-#  api_key = os.getenv("OPENAI_API_KEY")
-#  if api_key is None:
-#  print("Please set the OPENAI_API_KEY environment variable.")
-#  sys.exit(1)
-
-#  openai.api_key = api_key
 
 def extract_back_ticks(string):
     if '```' not in string:
